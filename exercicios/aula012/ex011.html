@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dias da Semana</title>
+    <style>
+        body{
+    background-color: rgb(55, 0, 255);
+    font: normal 20px Arial;
+    color: aliceblue;
+}
+input{
+    margin: 0 auto;
+    width: 169px;
+    height: 30px;
+    font: normal 20px Arial;
+    color: rgb(0, 183, 255);
+    background-color: rgb(55, 0, 255);
+    border-style:double;
+    border-color: rgb(0, 183, 255);
+   
+}
+div#res{
+    margin-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Selecione a Data do seu aniversário</h1>
+    <input type="date" name="txtDate2" id="txtDate2">
+    <script>
+        var agora = new Date()
+        var diaSem = agora.getDay()
+        switch (diaSem) {
+        case 0:
+        document.write("Hoje é Domingo")
+        break
+        case 1:
+        document.write("Hoje é Segunda")
+        break
+        case 2:
+        document.write("Hoje é Terça")
+        break
+        case 3:
+        document.write("Hoje é Quarta")
+        break
+        case 4:
+        document.write("Hoje é Quinta")
+        break
+        case 5:
+        document.write("Hoje é Sexta")
+        break
+        case 6:
+        document.write("Hoje é Sábado")
+        break
+        default:
+        document.write("Erro")
+        break
+        }
+    </script>
+</body>
+</html>

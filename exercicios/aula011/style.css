@@ -1,0 +1,14 @@
+
+body{
+    background-color: rgb(5, 84, 255);
+    font: normal 20pt Arial;
+    color: aliceblue;
+}
+input{
+    width: 100px;
+    height: 26px;
+    font-size: 20px;
+}
+div#res{
+    margin-top: 10px;
+}
